@@ -1,11 +1,11 @@
 model = dict(
     type='RelativeLoc',
     data_preprocessor=dict(
-        type='mmselfsup.RelativeLocDataPreprocessor',
+        type='RelativeLocDataPreprocessor',
         mean=[151.14, 102.69, 97.74],
         std=[70.03, 55.91, 54.73],
         bgr_to_rgb=True),
-    backbone=dict(type='EfficientNet', arch='b4'),
+    backbone=dict(type='mmpretrain.EfficientNet', arch='b4'),
     neck=dict(
         type='RelativeLocNeck',
         in_channels=1792,
