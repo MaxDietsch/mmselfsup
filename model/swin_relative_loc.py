@@ -9,6 +9,7 @@ model = dict(
         type='mmpretrain.SwinTransformer',
         arch='small',
         img_size=640,
+        pad_small_map=True
         ),
     neck=dict(
         type='RelativeLocNeck',
