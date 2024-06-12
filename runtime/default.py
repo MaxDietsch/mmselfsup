@@ -6,7 +6,7 @@ default_hooks = dict(
     param_scheduler=dict(type='ParamSchedulerHook'),
     checkpoint=dict(type='CheckpointHook', interval=1, max_keep_ckpts = -1),
     sampler_seed=dict(type='DistSamplerSeedHook'),
-    visualization=dict(type='VisualizationHook', enable=False),
+    visualization=dict(type='mmpretrain.VisualizationHook', enable=False),
 )
 
 # configure environment
