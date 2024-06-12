@@ -44,7 +44,6 @@ class RelativeLoc(BaseModel):
         Returns:
             Dict[str, torch.Tensor]: A dictionary of loss components.
         """
-        print(inputs[0].shape)
         x1 = self.backbone(inputs[0])
         x2 = self.backbone(inputs[1])
         x = (torch.cat((x1[0], x2[0]), dim=1), )
