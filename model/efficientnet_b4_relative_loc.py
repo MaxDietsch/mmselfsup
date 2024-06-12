@@ -10,7 +10,7 @@ model = dict(
         type='RelativeLocNeck',
         in_channels=1792,
         out_channels=3584,
-        with_avg_pool=True),
+        with_avg_pool=False),
     head=dict(
         type='ClsHead',
         loss=dict(type='mmpretrain.CrossEntropyLoss'),
