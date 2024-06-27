@@ -5,5 +5,5 @@ _base_ = [
         '../runtime/default.py'
         ]
 
-load_from = None
-resume = False
+load_from = '../../mmpretrain/work_dirs/phase4/efficientnet_b4/ssl_relative_loc/lr_decr/epoch_166.pth'
+resume = True
